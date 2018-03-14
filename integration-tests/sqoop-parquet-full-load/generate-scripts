@@ -1,5 +1,6 @@
 #!/bin/bash -e
 set -x
+echo "generate scripts"
 ls -la .
-ls -la output
+pwd
 pipewrench-merge --conf=tables.yml --debug_level ERROR --env=env.yml --pipeline-templates=../../templates/sqoop-parquet-full-load
