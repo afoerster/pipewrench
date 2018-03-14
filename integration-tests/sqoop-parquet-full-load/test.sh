@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 for table in titanic baseball vocab;do
    pushd ${table}
    # Run the test-targets script to ensure all targets are available
