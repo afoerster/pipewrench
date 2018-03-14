@@ -8,4 +8,4 @@ echo "script dir"
 pwd
 ls -lah
 ./generate-scripts
-docker-compose --user hdfs exec kimpala /mount/sqoop-parquet-full-load/run-in-container.sh
+docker-compose exec --user hdfs kimpala /mount/sqoop-parquet-full-load/run-in-container.sh
